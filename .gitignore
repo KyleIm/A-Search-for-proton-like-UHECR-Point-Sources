@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Editor/backup artifacts
+*~
+#*#
+
+# Local data and outputs (large files)
+*.csv
+*.png
+Archive_*
+data/
+outputs/
+
+# OS
+.DS_Store
