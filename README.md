@@ -12,8 +12,12 @@ wget http://physics-anduril.case.edu/~covault/herald/Archive_v6r2p2
 ```
 for download. The file will be approximately 1.6 Gb.
 
-Also, for the continuity for the setup, when we use the Energy, we cut the energy for the 5 EeV threshold. You can change
-- `scripts/testscript/`: 보조 테스트/시각화 스크립트
+Also, for the continuity for the setup, when we use the Energy, we cut the energy for the 5 EeV threshold. You can change the energy preference based on what you want, however, we will explain based on this setup.
+
+Followings are the list of scripts saved in this folder and what they do.
+
+- `CutEnergy.py`: This returns the Cut5EeV.csv file from Archieve_v6r2p2 file.
+- D
 
 ## Excluded
 - 대용량 데이터(`*.csv`)
