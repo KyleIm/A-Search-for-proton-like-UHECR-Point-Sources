@@ -1,7 +1,7 @@
 import numpy as np
 
 rf=open('Archive_v6r2p2', 'r')
-wf=open('Cut50EeV.csv','w')
+wf=open('Cut5EeV.csv','w')
 head="AugerID,Theta,Phi,RA,Dec,L,B,E,UTC,GPStime\n"
 wf.write(head)
 
@@ -29,7 +29,7 @@ for i in rf:
         par23=int(par[22])
         par43=int(par[42])
         par44=int(par[43])
-        if((par22>0 and par23>1 and Theta<np.pi/3) and E>50 and par43>3 and (par44==1 or par44==2)): #Required conditions for cut
+        if((par22>0 and par23>1 and Theta<np.pi/3) and E>5 and par43>3 and (par44==1 or par44==2)): #Required conditions for cut
             data="%d,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%d,%d\n"%(ID,Theta,Phi,RA,Dec,L,B,E,UTC,GPST)
             wf.write(data)
             n=n+1
