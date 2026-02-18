@@ -20,4 +20,10 @@ Followings are the list of scripts saved in this folder and what they do.
 - `Deflection.py`: This returns the JF12_5EeVCut.csv file from Cut5EeV.csv file. JF12_5EeVCut.csv includes JF12 Backtracked coordinate information. Additional parameters may be introduced depending on the direction of the simulation. (However, we did not introduce it in this analysis.)
 - `TimeShuffling.py`: This returns test5EeV.csv file from Cut5EeV.csv file. The test5EeV.csv file includes simulated dataset from time shuffling simulation.
 
-### 
+### Modification for CRPropa3
+
+Customization for CRPropa3 was made for the purpose of Gaussian random sampling for JF12 sub parameters. When you download the CRPropa3, please replace `JF12Field.h` and `JF12Field.cpp` file from 
+```
+CRPropa3/src/magneticfield/
+```
+before compiling the library. After implementing customization, you can use Gaussian random sampling for JF12 magnetic field model when you use JF12Field(True). The default JF12Field() is False, so if you do not want the random sampling, you can still use JF12Field() as written on CRPropa3 manual.
