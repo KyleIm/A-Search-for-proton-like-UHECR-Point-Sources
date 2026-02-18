@@ -17,22 +17,7 @@ Also, for the continuity for the setup, when we use the Energy, we cut the energ
 Followings are the list of scripts saved in this folder and what they do.
 
 - `CutEnergy.py`: This returns the Cut5EeV.csv file from Archieve_v6r2p2 file. The Cut5EeV.csv file is a smaller capacity file that only includes the necessary information for the analysis.
-- `Deflection.py`: This returns the JF12_5EeVCut.csv file from the Cut5EeV.csv file. JF12_5EeVCut.csv includes JF12 Backtracked coordinate information. Additional parameters may be introduced depending on the direction of the simulation. (However, we did not introduce it in this analysis.)
-- 
+- `Deflection.py`: This returns the JF12_5EeVCut.csv file from Cut5EeV.csv file. JF12_5EeVCut.csv includes JF12 Backtracked coordinate information. Additional parameters may be introduced depending on the direction of the simulation. (However, we did not introduce it in this analysis.)
+- `TimeShuffling.py`: This returns test5EeV.csv file from Cut5EeV.csv file. The test5EeV.csv file includes simulated dataset from time shuffling simulation.
 
-## Excluded
-- 대용량 데이터(`*.csv`)
-- 결과 이미지(`*.png`)
-- 백업 파일(`*~`, `#*#`)
-- 아카이브 파일(`Archive_*`)
-
-## Setup
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-## Notes
-- 스크립트는 원본 파일명을 유지했습니다.
-- 실행에 필요한 입력 데이터(`.csv`)는 별도 경로에 두고 파일명/경로를 스크립트에 맞게 설정해야 합니다.
+### 
