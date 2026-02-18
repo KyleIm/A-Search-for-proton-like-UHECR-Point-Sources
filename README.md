@@ -1,9 +1,10 @@
-# Analysis Scripts
+# Kyle Im's PhD analysis Repository
 
-`/home/hea/Kyle/Analysis`에서 분석 스크립트만 추려 정리한 저장소입니다.
+Welcome to the repository, which includes all the important source codes that Kyle used during his PhD analysis.
 
-## Included
-- `scripts/`: 메인 분석 스크립트
+## Introduction
+This repository includes 3 main part.
+- `Analysis Script`: Here you can find all the analysis scripts that Kyle has used. You
 - `scripts/testscript/`: 보조 테스트/시각화 스크립트
 
 ## Excluded
