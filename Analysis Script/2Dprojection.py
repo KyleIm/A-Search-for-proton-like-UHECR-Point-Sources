@@ -52,9 +52,9 @@ ax.set_ylabel("B", fontsize=25)
     
 cbar = plt.gcf().axes[-1]
 cbar.tick_params(labelsize=20)
-#plt.title("2D projection of Pierre Auger Raw Dataset, E > 5EeV, nside = 15",fontsize=30)
-plt.title("2D projection of Pierre Auger JF12 Backtracked Dataset, E > 5EeV, nside = 15",fontsize=30)
-#plt.title("2D projection of Time Shuffled Background (JF12 Backtracked), E > 5EeV, nside = 15",fontsize=30)
+plt.title("2D projection of Pierre Auger Raw Dataset, E > 5EeV, nside = 15",fontsize=30) # RAW data Projection
+#plt.title("2D projection of Pierre Auger JF12 Backtracked Dataset, E > 5EeV, nside = 15",fontsize=30) # JF12 data Projection
+#plt.title("2D projection of Time Shuffled Background (JF12 Backtracked), E > 5EeV, nside = 15, alpha = ",fontsize=30) # Time Shuffled JF12 Backtracked data Projection
 
 
 plt.show()
