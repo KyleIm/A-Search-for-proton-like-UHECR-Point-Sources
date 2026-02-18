@@ -27,3 +27,7 @@ Customization for CRPropa3 was made for the purpose of Gaussian random sampling 
 CRPropa3/src/magneticfield/
 ```
 before compiling the library. After implementing customization, you can use Gaussian random sampling for JF12 magnetic field model when you use JF12Field(True). The default JF12Field() is False, so if you do not want the random sampling, you can still use JF12Field() as written on CRPropa3 manual.
+
+### UPdated plots from Kyle's Thesis
+
+This folder contians most updated plots from the latest version of Kyle's analysis plot. The main purpose for this folder is to update  includes all the plot which Kyle made for the Chapter 3 and 4
