@@ -5,7 +5,7 @@ import time
 from crpropa import *
 
 
-df=pd.read_csv('Cut2EeV.csv')
+df=pd.read_csv('Cut5EeV.csv') # Defalut Energy Cut is 5 EeV
 ID=df['AugerID'].values
 E=df['E'].values
 l=df['L'].values
@@ -31,7 +31,7 @@ position = Vector3d(-8.5, 0, 0) * kpc
 # obs.onDetection(TextOutput('galactic_backtracking.txt', Output.Event3D))
 sim.add(obs)
 
-#Parameters should be added
+# Additional parameters may be introduced depending on the direction of the simulation. (However, we did not introduce it in this analysis.)
 """
 sim.add(Redshift())
 sim.add(PhotoPionProduction(CMB()))
@@ -42,7 +42,7 @@ sim.add(NclearDecay())
 sim.add(ElectronPairProduction(CMB()))
 sim.add(ElectronPairProduction(IRB()))
 """
-wf=open('JF12_2EeVCut.csv','w')
+wf=open('JF12_5EeVCut.csv','w')
 
 head="AugerID,E,L,B,dL,dB\n"
 wf.write(head)
