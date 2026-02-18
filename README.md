@@ -17,7 +17,8 @@ Also, for the continuity for the setup, when we use the Energy, we cut the energ
 Followings are the list of scripts saved in this folder and what they do.
 
 - `CutEnergy.py`: This returns the Cut5EeV.csv file from Archieve_v6r2p2 file. The Cut5EeV.csv file is a smaller capacity file that only includes the necessary information for the analysis.
-- `Deflection.py`: This returns the JF12_5EeVCut.csv file from the Cut5EeV.csv file. JF12_5EeVCut.csv includes JF12 Backtracked coordinate information. 
+- `Deflection.py`: This returns the JF12_5EeVCut.csv file from the Cut5EeV.csv file. JF12_5EeVCut.csv includes JF12 Backtracked coordinate information. Additional parameters may be introduced depending on the direction of the simulation. (However, we did not introduce it in this analysis.)
+- 
 
 ## Excluded
 - 대용량 데이터(`*.csv`)
