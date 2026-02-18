@@ -6,7 +6,11 @@ Welcome to the repository, which includes all the important source codes that Ky
 This repository includes 3 main parts.
 
 ### Analysis Script 
-Here you can find all the analysis scripts that Kyle has used. Users can reproduce Kyle's result just by running the same Python script saved here. However, due to the storage limitations of this repository, users are advised to obtain the Archive_v6r2p2 files directly from the Auger Herald, as they constitute the core dataset for this analysis. Please type == wget http://physics-anduril.case.edu/~covault/herald/Archive_v6r2p2 == for download. The file will be approximately 1.6 Gb.
+Here you can find all the analysis scripts that Kyle has used. Users can reproduce Kyle's result just by running the same Python script saved here. However, due to the storage limitations of this repository, users are advised to obtain the Archive_v6r2p2 files directly from the Auger Herald, as they constitute the core dataset for this analysis. Please type 
+```
+wget http://physics-anduril.case.edu/~covault/herald/Archive_v6r2p2
+```
+for download. The file will be approximately 1.6 Gb.
 
 Also, for the continuity for the setup, when we use the Energy, we cut the energy for the 5 EeV threshold. You can change
 - `scripts/testscript/`: 보조 테스트/시각화 스크립트
