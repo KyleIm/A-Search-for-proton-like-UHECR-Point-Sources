@@ -5,8 +5,6 @@ import healpy as hp
 from healpy.newvisufunc import projview
 
 df=pd.read_csv('JF12_5EeVCut.csv')
-#ID=df['AugerID'].values
-#E=df['E'].values
 l=df['dL'].values
 b=np.pi/2-df['dB'].values
 
