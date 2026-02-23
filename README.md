@@ -19,6 +19,7 @@ Followings are the list of scripts saved in this folder and what they do.
 - `CutEnergy.py`: This returns the Cut5EeV.csv file from Archieve_v6r2p2 file. The Cut5EeV.csv file is a smaller capacity file that only includes the necessary information for the analysis.
 - `Deflection.py`: This returns the JF12_5EeVCut.csv file from Cut5EeV.csv file. JF12_5EeVCut.csv includes JF12 Backtracked coordinate information. Additional parameters may be introduced depending on the direction of the simulation. (However, we did not introduce it in this analysis.)
 - `TimeShuffling.py`: This returns test5EeV.csv file from Cut5EeV.csv file. The test5EeV.csv file includes simulated dataset from time shuffling simulation.
+- 'location_selection.py' : This creates a scattering projection plot using Mollewide projection. We are using the astro convention, so the galactic longitude is increasing from right to left. Since the default setup for Geographic Projections in matplotlib is increasing from left to right, some modifications were made for this.
 
 ### Modification for CRPropa3
 
