@@ -5,10 +5,9 @@ import healpy as hp
 from healpy.newvisufunc import projview
 
 df=pd.read_csv('JF12_5EeVCut.csv')
-l=df['dL'].values
-b=np.pi/2-df['dB'].values
+l=df['L'].values
+b=np.pi/2-df['B'].values
 
-print(np.max(l),np.min(l),np.max(b),np.min(b))
 
 nside=15
 npix=hp.nside2npix(nside)
@@ -19,18 +18,6 @@ hpmap=np.zeros(npix)
 
 for i in range(len(l)):
     hpmap[indices[i]]=hpmap[indices[i]]+1
-
-count = 0
-for j in range(len(hpmap)):
-    (br,lr) = hp.pix2ang(nside,j)
-    bd = 90 - np.rad2deg(br)
-    ld = np.rad2deg(lr)
-    if (bd < -15 and bd > -30 and hpmap[j] > 40):
-        print(ld, bd, hpmap[j])
-        count += 1
-
-print(count)
-
 
 projview(
     hpmap,
@@ -52,9 +39,10 @@ ax.set_ylabel("B", fontsize=25)
     
 cbar = plt.gcf().axes[-1]
 cbar.tick_params(labelsize=20)
-plt.title("2D projection of Pierre Auger Raw Dataset, E > 5EeV, nside = 15",fontsize=30) # RAW data Projection
-#plt.title("2D projection of Pierre Auger JF12 Backtracked Dataset, E > 5EeV, nside = 15",fontsize=30) # JF12 data Projection
-#plt.title("2D projection of Time Shuffled Background (JF12 Backtracked), E > 5EeV, nside = 15, alpha = ",fontsize=30) # Time Shuffled JF12 Backtracked data Projection
+plt.title(r"2D projection of Pierre Auger Raw Dataset, E > 5EeV, $N_{side}$ = 15",fontsize=30)
+#plt.title(r"2D projection of Pierre Auger JF12 Backtracked Dataset, E > 5EeV, $N_{side}$ = 15",fontsize=30)
+#plt.title(r"2D projection of Time Shuffled Background Simulation, E > 5EeV, $N_{side}$ = 15", fontsize=30)
+
 
 
 plt.show()
