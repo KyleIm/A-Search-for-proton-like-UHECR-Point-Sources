@@ -20,6 +20,7 @@ Followings are the list of scripts saved in this folder and what they do.
 - `Deflection.py`: This returns the JF12_5EeVCut.csv file from Cut5EeV.csv file. JF12_5EeVCut.csv includes JF12 Backtracked coordinate information. Additional parameters may be introduced depending on the direction of the simulation. (However, we did not introduce it in this analysis.)
 - `TimeShuffling.py`: This returns test5EeV.csv file from Cut5EeV.csv file. The test5EeV.csv file includes simulated dataset from time shuffling simulation.
 - `location_selection.py` : This creates a scattering projection plot using Mollewide projection. We are using the astro convention, so the galactic longitude is increasing from right to left. Since the default setup for Geographic Projections in matplotlib is increasing from left to right, some modifications were made for this.
+- `RPS_5EeV` : This creates a scattering on the Mollewide projection plot for random parameter scattering. The default setup is a backtracking from the origin with a 5 EeV energy test particle with 1,000 samplings. Randomized JF12 sub-parameters make different results whenever we make the backtracking, and this is represented as blue. For comparison, we have represented a green dot for the origin of the particle and a red dot for the backtracking result using JF12 model. The result is shown as  `RPS.png`, however, the plot on the thesis is a modified version that uses the name `Deflection_from_origin.png`. (Modification made with google slide.)
 
 ### Modification for CRPropa3
 
