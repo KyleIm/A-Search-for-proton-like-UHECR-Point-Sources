@@ -24,7 +24,7 @@ Followings are the list of scripts saved in this folder and what they do.
 
 ### Modification for CRPropa3
 
-Customization for CRPropa3 was made for the purpose of Gaussian random sampling for JF12 sub parameters. When you download the CRPropa3, please replace `JF12Field.h` and `JF12Field.cpp` file from 
+Customization for CRPropa3 was made for the purpose of Gaussian random parameter sampling for JF12 sub parameters. When you download the CRPropa3, please replace `JF12Field.h` and `JF12Field.cpp` file from 
 ```
 CRPropa3/src/magneticfield/
 ```
