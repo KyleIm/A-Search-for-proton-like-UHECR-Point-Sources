@@ -70,6 +70,8 @@ for k in range(len(dghpmap)): #Use this part for JF12 Deflected Li&Ma projection
     else:
         lima=LiMa(dghpmap[k],dghpmapb[k]/20,1/20)
         dglimamap_l.append(lima)
+
+hpmap = np.array(dglimamap_l)  
 """
 for k in range(len(ghpmap)): #Use this part for RAW Li&Ma projection.
     if(ghpmapb[k]==0):
@@ -82,8 +84,7 @@ for k in range(len(ghpmap)): #Use this part for RAW Li&Ma projection.
         lima=LiMa(dghpmap[k],dghpmapb[k]/20,1/20)
         glimamap_l.append(lima)
 hpmap = np.array(glimamap_l)
-"""
-hpmap = np.array(dglimamap_l)     
+"""   
 projview(
     hpmap,
     coord=["G"],
@@ -107,6 +108,6 @@ cbar = plt.gcf().axes[-1]
 cbar.tick_params(labelsize=20)
 
 a=np.where(hpmap==np.max(hpmap))
-#plt.title(r"2D projection of Li&Ma Significance (RAW) : E>5EeV, $N_{side}$=15, $\alpha$=1/20" ,fontsize=30) # title for RAW LiMa
-plt.title(r"2D projection of Li&Ma Significance (JF12 Backtracked) : E>5EeV, $N_{side}$=15, $\alpha$=1/20" ,fontsize=30) # title for JF12 backtracked LiMa
+#plt.title(r"2D projection of Li&Ma Significance (RAW) : 2EeV<E$\leq$3EeV, $N_{side}$=6, $\alpha$=1/20" ,fontsize=30) # title for RAW LiMa
+plt.title(r"2D projection of Li&Ma Significance (with Synthetic Injection) : E>5EeV, $N_{side}$=15, $\alpha$=1/20" ,fontsize=28) # title for JF12 backtracked LiMa
 plt.show()
