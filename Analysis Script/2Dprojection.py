@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 import healpy as hp
 from healpy.newvisufunc import projview
 
-df=pd.read_csv('JF12_5EeVCut.csv')
-l=df['L'].values
-b=np.pi/2-df['B'].values
+df=pd.read_csv('JF12_7EeVCut.csv')
+l=df['dL'].values
+b=np.pi/2-df['dB'].values
 
 
-nside=15
+nside=12
 npix=hp.nside2npix(nside)
 
 indices=hp.ang2pix(nside,b,l)
@@ -39,8 +39,8 @@ ax.set_ylabel("B", fontsize=25)
     
 cbar = plt.gcf().axes[-1]
 cbar.tick_params(labelsize=20)
-plt.title(r"2D projection of Pierre Auger Raw Dataset, E > 5EeV, $N_{side}$ = 15",fontsize=30)
-#plt.title(r"2D projection of Pierre Auger JF12 Backtracked Dataset, E > 5EeV, $N_{side}$ = 15",fontsize=30)
+#plt.title(r"2D projection of Pierre Auger Raw Dataset, E > 5EeV, $N_{side}$ = 15",fontsize=30)
+plt.title(r"2D projection of Pierre Auger JF12 Backtracked Dataset, E > 4EeV, $N_{side}$ = 12",fontsize=30)
 #plt.title(r"2D projection of Time Shuffled Background Simulation, E > 5EeV, $N_{side}$ = 15", fontsize=30)
 
 
