@@ -28,7 +28,7 @@ Followings are the list of scripts saved in this folder and what they do.
 -  `Flux_projection.py` : This is a variation of `2Dprojection.py`. This shows HealPix projection of the flux upper limit. The hardware acceptance gets maximized at E > 3 EeV. Not able to use this if the energy threshold is lower than this. The default energy setting is for E > 5 EeV.
 -   `Flux_projection_low.py` : This is a variation of `Flux_projection.py`. The energy threshold for this script is 2 EeV. We have directional exposure for this lower energy threshold.
 -   `Decvsflux.py` : This shows declination dependence of the flux upper limit as a step plot for events with a 5 EeV threshold. I have made an average flux for each step, and the step is made with a 3-degree order.
--   `Decvsflux_all.py` : This is a variation of `Decvsflux.py`. Now this shows step functions for 3 different energy thresholds. $\geq$
+-   `Decvsflux_all.py` : This is a variation of `Decvsflux.py`. Now this shows step functions for 3 different energy thresholds. E > 5 EeV is shown as red, E > 3 EeV is shown as blue and 2 EeV < E $\leq$ 3 EeV is shown as 
 
 ### Modification for CRPropa3
 
