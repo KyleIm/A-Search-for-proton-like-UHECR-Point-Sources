@@ -36,7 +36,12 @@ Followings are the list of scripts saved in this folder and what they do.
 
 ### CSV Files
 
-The purpose of 
+The purpose of this directory is to guarantee the same result shown in Kyle's PhD thesis. All 3 scripts saved here are something requires Monte Carlo simulations, so just using the same script will not generate the same result. Also, because of the limitation of the file size allowed in GitHub, you will be able to regenerate only for 5 EeV.
+
+-   `test5EeV.csv` : This file includes time-shuffling Monte Carlo simulation results. Unfortunately, for lower energy simulations, their file size is too large to be uploaded to GitHub. Any analysis including time-shuffled background requires this csv file. (Such as analyzing Li-Ma significance or Flux upper Limit.)
+-   `EvsR.csv` : This file is created from `combined_evrs_effectivearea.py`. You can regenerate a plot like EvsR.png using this file.
+-   `Sy_events_5EeV.csv` : This file is created from `lima_Syenthetic.py`. All the file which requires synthetic injection requires this csv file.
+
 
 ### Modifications for CRPropa3
 
